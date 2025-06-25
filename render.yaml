@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: classymoviebot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 main.py"
+    env: python
+    region: oregon
+    plan: free
+    pythonVersion: 3.10
