@@ -1,6 +1,6 @@
 services:
-  - type: web
-    name: classymoviebot
+  - type: worker
+    name: classy-moviebot
     runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python3 main.py"
